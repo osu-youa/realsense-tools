@@ -1,0 +1,8 @@
+<launch>
+
+    <arg name="location" default="" />
+    <node name="realsense_capture" pkg="realsense_tools" type="capture_data.py" output="screen">
+        <param name="location" value="$(arg location)" />
+    </node>
+
+</launch>
